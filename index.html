@@ -1,1 +1,43 @@
-<img src="/Images/Resume.png">Resume</img>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive PNG Image</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Optional, for better contrast */
+        }
+
+        .container {
+            text-align: center; /* Center the image inside the container */
+        }
+
+        .interactive-image {
+            max-width: 80%; /* Image will not exceed 80% of the viewport width */
+            height: auto; /* Keep the image's aspect ratio */
+            border: 2px solid #ccc; /* Optional: add border */
+            border-radius: 10px; /* Optional: rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
+        }
+
+        /* Optional: Styling for interaction */
+        .interactive-image:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+            transition: transform 0.3s ease; /* Smooth zoom effect */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="/Images/Resume.png" alt="Kumaresan Resume" class="interactive-image">
+    </div>
+
+</body>
+</html>
